@@ -1,0 +1,62 @@
+{
+  "name": "mBox",
+  "description": "A chat/email app.",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Joshua Smith",
+    "url": "http://micovision.bugs3.com/"
+  },
+  "permissions": [
+    "settings"
+  ],
+  "locales": {
+    "ar": {
+  	  "name": "mBox",
+  	  "description": ""
+    },
+    "de": {
+  	  "name": "mBox",
+  	  "description": ""
+    },
+    "el": {
+  	  "name": "mBox",
+  	  "description": ""
+    },
+    "en-US": {
+  	  "name": "mBox",
+  	  "description": "A chat/email app."
+    },
+    "es": {
+  	  "name": "mBox",
+  	  "description": ""
+    },
+    "fr": {
+  	  "name": "mBox",
+  	  "description": ""
+    },
+    "it": {
+  	  "name": "mBox",
+  	  "description": ""
+    },
+    "pt-BR": {
+  	  "name": "mBox",
+  	  "description": ""
+    },
+    "ru": {
+  	  "name": "mBox",
+  	  "description": ""
+    },
+    "tr": {
+  	  "name": "mBox",
+  	  "description": ""
+    },
+    "zh-TW": {
+  	  "name": "mBox",
+  	  "description": ""
+    }
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "128": "style/images/logo.png"
+  }
+}

@@ -1,0 +1,96 @@
+/* Basic CSS */
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+  margin: 0;
+  padding: 0;
+  
+  font-size: 10px;
+  font-family: sans-serif;
+  
+  background: url(images/bg.png) black;
+}
+
+h1 {
+  margin: 0px 0px 20px 0px;
+}
+
+h2, h3, h4 {
+  margin: 0px 0px 15px 0px;
+  
+  font-weight: normal;
+  
+  border-bottom: 1px solid black;
+}
+
+a, [type=a] {
+  color: #2B9BD2;
+  text-decoration: none;
+}
+
+a:hover, a:active, a:focus, [type=a]:hover, [type=a]:active, [type=a]:focus {
+  text-decoration: underline;   
+}
+
+.c_bar {
+  padding: 5px;
+
+  z-index: 10;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  
+  border-top: 2px solid #CCCDD2;
+  
+  text-align: center;
+  
+  background-image: linear-gradient(#ECECEE, #DBE1ED);
+  background-image: -moz-linear-gradient(#ECECEE, #DBE1ED);
+  background-image: -webkit-linear-gradient(#ECECEE, #DBE1ED);
+  background-image: -o-linear-gradient(#ECECEE, #DBE1ED);
+  background-image: -ms-linear-gradient(#ECECEE, #DBE1ED);
+  background-color: #ECECEE;
+}
+
+.c_bar .message_box {
+  width: calc(100% - 90px);
+  width: -moz-calc(100% - 90px);
+  width: -webkit-calc(100% - 90px);
+  width: -o-calc(100% - 90px);
+  width: -ms-calc(100% - 90px);
+}
+
+.c_bar .send {
+  color: white;
+
+  background-image: linear-gradient(#85AFF9, #1848C6);
+  background-image: -moz-linear-gradient(#85AFF9, #1848C6);
+  background-image: -webkit-linear-gradient(#85AFF9, #1848C6);
+  background-image: -o-linear-gradient(#85AFF9, #1848C6);
+  background-image: -ms-linear-gradient(#85AFF9, #1848C6);
+  background-color: #1848C6;
+}
+
+.c_bar .send:hover, .c_bar .send:focus {
+  border: 2px solid #A1C7FD;
+}
+
+.c_bar .send:active {
+  border: 2px solid #428eff;
+  
+  background-image: linear-gradient(#0F3388, #1848C6);
+  background-image: -moz-linear-gradient(#0F3388, #1848C6);
+  background-image: -webkit-linear-gradient(#0F3388, #1848C6);
+  background-image: -o-linear-gradient(#0F3388, #1848C6);
+  background-image: -ms-linear-gradient(#0F3388, #1848C6);
+  background-color: #0F3388;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+	src: url(fonts/opensans.ttf);
+}

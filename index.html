@@ -1,0 +1,62 @@
+<!Doctype html>
+<html>
+  
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="mBox is an experimental online chat service." />
+    <meta name="keywords" content="mBox, Chat, Messaging" />
+
+    <link rel="stylesheet" type="text/css" href="style/a.css" />
+    <link rel="stylesheet" type="text/css" href="app/style/input.css" />
+    <link rel="stylesheet" type="text/css" href="app/style/regions.css" />
+    <link rel="stylesheet" type="text/css" href="style/layout.css" />
+    <link rel="stylesheet" type="text/css" href="style/notify.css" />
+    <link rel="stylesheet" type="text/css" href="app/style/specialClasses.css" />
+    
+    <link href="style/images/favicon.png" rel="icon" type="image/x-icon" />
+    
+    <title>mBox</title>
+    
+  </head>
+  
+  <body> 
+    <noscript>Scripts must be enabled to use mBox.</noscript>
+    
+    <header theme="dark">
+      <a href=""><img src="style/images/logo_simple.png" id="logo" alt="mBox" height="90" /></a>
+      <section class="menu">
+        <input type="submit" onClick="checkLogin()" value="Login" />
+      </section>
+    </header>
+     
+    <section class="page" theme="light">
+      <section class="info">mBox is still in development, but you can see our current work by logging in.</section>
+    </section>
+     
+    <footer theme="dark">
+      Copyright &copy; 2013 <a href="http://micovision.bugs3.com" title="Micovision" target="_blank">Micovision</a>
+    </footer>
+               
+    <section role="dialog" id="login" style="background: none;" theme="overlay">
+      <section class="background"></section>
+      <section class="content">
+        <section class="box" id="loginBox">
+          <img src="style/images/logo.png" alt="mBox Logo" height="150" />
+          <form id="loginPageForm">
+            <input type="text" id="userNameBox" placeholder="Username" style="width: 200px;" />
+            <br /><input type="password" id="passwordBox" placeholder="Password" style="width: 200px;" />
+            <br /><input type="submit" onClick="login()" value="Login">
+            <input type="button" onClick="login('admin', 'w8c3aV1SFpyz1F')" value="cheat!" />
+            <input type="reset" onClick="document.location.hash = '';" value="X" />
+          </form>
+        </section>
+      </section>
+    </section>
+      
+    <script type="text/javascript" src="js/mbox.js"></script> 
+    <script type="text/javascript" src="app/packages/notification/notification.js"></script> 
+    <script type="text/javascript" src="app/packages/param.js"></script> 
+    
+  </body>
+  
+</html>

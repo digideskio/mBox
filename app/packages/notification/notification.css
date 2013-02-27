@@ -1,0 +1,131 @@
+#notificationContainer {
+  width: 300px;
+
+  z-index: 500;
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  
+  transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease; 
+}
+
+#notificationContainer input {
+  padding: 2px;
+  margin: 5px;
+  
+  border-radius: 16px;
+  border: 2px solid white;
+  
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+  
+  background: black;
+  
+  transition: all .5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+} 
+
+#notificationContainer input[type=button], #notificationContainer input[type=submit] {
+  height: 25px;
+  width: 25px;
+}  
+
+#notificationContainer input:hover {
+  text-decoration: none;  
+  color: black;
+  
+  background: #ccc;
+  
+  transition: all .5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+}
+
+.notification {
+  visibility: hidden;
+  opacity: 0;
+  margin: 5px;
+  padding: 8px 5px 5px 5px;
+  display: block;
+  overflow: hidden;
+  display: none;
+  
+  box-shadow: 0px 0px 30px black;
+  
+  border: 2px solid white;
+  border-radius: 10px;
+  
+  text-overflow: ellipsis;
+  
+  background: black;
+
+  transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease; 
+}
+
+.notification.shown {
+  visibility: visible;
+  opacity: .9;
+  display: block;
+  
+  animation: notificationShow .2s ease;
+  -moz-animation: notificationShow .2s ease;
+  -webkit-animation: notificationShow .2s ease;
+  -o-animation: notificationShow .2s ease;
+  -ms-animation: notificationShow .2s ease;  
+  
+  transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  -ms-transition: all .2s ease; 
+}
+
+
+@keyframes notificationShow
+{
+  from {opacity: 0;}
+  to {opacity: .9;}
+}
+
+@-moz-keyframes notificationShow
+{
+  from {opacity: 0;}
+  to {opacity: .9;}
+}
+
+@-webkit-keyframes notificationShow
+{
+  from {opacity: 0;}
+  to {opacity: .9;}
+}
+
+@-o-keyframes notificationShow
+{
+  from {opacity: 0;}
+  to {opacity: .9;}
+}
+
+@-ms-keyframes notificationShow
+{
+  from {opacity: 0;}
+  to {opacity: .9;}
+}

@@ -1,0 +1,121 @@
+<!Doctype html>
+<html>
+  
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="mBox is an experimental online chat service." />
+    <meta name="keywords" content="mBox, Chat, Messaging" />
+
+    <link rel="stylesheet" type="text/css" href="style/input.css" />
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+    <link rel="stylesheet" type="text/css" href="style/regions.css" />
+    <link rel="stylesheet" type="text/css" href="style/headers.css" />
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 600px) and (max-height: 700px), (max-width: 700px) and (max-height: 600px)" href="style/small.css" />
+    <link rel="stylesheet" type="text/css" media="all and (min-width: 601px) and (min-height: 701px), (min-width: 701px) and (min-height: 601px)" href="style/large.css" />
+    <link rel="stylesheet" type="text/css" href="style/specialClasses.css" />
+    
+    <link href="style/images/favicon.png" rel="icon" type="image/x-icon" />
+    
+    <title>mBox</title>
+    
+  </head>
+  
+  <body> 
+    <noscript>Scripts must be enabled to use mBox.</noscript>
+    
+    <section id="contentContainer">
+        
+      <section role="dialog" id="login" style="background: none;" theme="overlay">
+        <section class="background"></section>
+        <section class="content">
+          <section class="box" id="loginBox">
+            <img src="style/images/logo.png" alt="mBox Logo" height="150" />
+            <form id="loginPageForm">
+              <input type="text" id="userNameBox" placeholder="Username" style="width: 200px;" />
+              <br /><input type="password" id="passwordBox" placeholder="Password" style="width: 200px;" />
+              <br /><input type="submit" onClick="login()" value="Login">
+              <input type="button" onClick="login('admin', 'w8c3aV1SFpyz1F')" value="cheat!" />
+            </form>
+          </section>
+        </section>
+      </section>
+      
+      <section role="region" id="home">
+        <header>
+        <span type="button" style="float: left;" onClick="navigate('about', 'Show About', 'none')">About</span><span class="title">Home</span><span type="button" style="float: right;" onClick="createMbox()">+</span><img id="fs_button" src="style/images/fs.png" alt="Fullscreen" height="18" type="button" style="float: right; padding: 3px;" onClick="goFullScreen()" />
+        </header>
+        <section class="content">
+        </section>
+      </section>
+      
+      <section role="region" id="about">
+        <header position="fixed">
+        <span type="button" style="float: left;" onClick="navBack()">Back</span><span class="title">About mBox</span>
+        </header>
+        <section class="content" style="text-align: center;">
+        <img src="style/images/logo.png" alt="logo" height="200" />
+        <br /><br />mBox is a webapp that allows you to text/email using open-web technology.
+        <br /><br />mBox was originally developed by me (<span type="a" onClick="createMbox('','Joshua Smith', 'micovision@verizon.net')">Joshua Smith</span>) for my best friend Jeb.
+        <br /><br /><br /><input type="button" value="Get My Chats" onClick="getMessageList()" />
+        <br /><br /><section id="myMessageList"></section>
+        </section>
+      </section>
+      
+      <section role="dialog" id="add">
+        <header>
+        <span type="button" style="float: left;" onClick="navBack()">Cancel</span><span class="title">Add mBox</span>
+        </header>
+        <section class="content">
+          <input type="button" value="Message Me!" onClick="createMbox('','Joshua Smith', 'micovision@verizon.net')" />
+          <input type="button" value="Contacts" onClick="showContacts()" />
+          <input type="button" value="Other (enter info)" onClick="navigate('new_contact', 'New Contact', 'self')" />
+        </section>
+      </section>
+      
+      <section role="dialog" id="unknown">
+        <header position="fixed">
+        <span type="button" style="float: left;" onClick="navBack()">Back</span><span class="title" style="color: red;">Unknown User</span>
+        </header>
+        <section class="content">
+        <h1>This user is unknown.</h1>
+        
+        <h3>Some potential reasons</h3>
+        <ul>
+        <li>Not in your contacts.</li>
+        <li>Not in your previous recipients.</li>
+        <li>No mBox account.</li>
+        </ul>
+        </section>
+      </section>
+      
+      <section role="region" id="error">
+        <header position="fixed">
+        <span type="button" style="float: left;" onClick="navBack()">Back</span><span class="title" style="color: red;">Error</span>
+        </header>
+        <section class="content">
+        <h1>Some error has occured.</h1>
+        </section>
+      </section>
+      
+      <section role="dialog" id="new_contact">
+        <header position="fixed">
+        <span type="button" style="float: left;" onClick="navBack()">Back</span><span class="title">Add Contact</span>
+        </header>
+        <section class="content">
+          <form action="javascript: addContact('','','',true)" style="border-radius: 10px; border: 2px solid black; background: #AAA; padding: 10px; margin: 0 auto; width: 250px; text-align: center;">
+            <input type="text" id="newContactNameBox" placeholder="Name (Optional)" style="width: 225px;" />
+            <br /><input type="text" id="newContactNumberBox" placeholder="Number" style="width: 225px;" />
+            <br /><input type="tel" id="newContactEmailBox" placeholder="Email" style="width: 225px;" />
+            <br /><input type="submit" value="Add" style="margin: 10px;">
+          </form>
+        </section>
+      </section>
+    </section>
+    
+    <script type="text/javascript" src="scripts/app.js"></script> 
+    <script type="text/javascript" src="packages/notification/notification.js"></script> 
+    <script type="text/javascript" src="packages/param.js"></script> 
+    
+  </body>
+  
+</html>

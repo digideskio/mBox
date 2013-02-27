@@ -1,0 +1,59 @@
+.info .icon, .warning .icon, .error .icon, .success .icon {
+  width: 20px;
+  
+  float: left;
+}
+
+.info {
+  padding: 5px 5px 5px 5px;
+  margin: 5px 0px 5px 0px;
+  
+  display: block;
+  opacity: .8;
+
+  color: black;
+  font-size: 16px;
+  text-align: center;
+
+  background-color: #2B9BD2;
+  
+  border-style: solid;
+  border-width: 1px;
+  border-color: #014968;
+}
+
+.warning, .error {
+  padding: 5px 5px 5px 5px;
+  margin: 5px 0px 5px 0px;
+  
+  display: block;
+  opacity: .8;
+
+  color: black;
+  font-size: 16px;
+  text-align: center;
+
+  background-color: #ff6b6b;
+  
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ff0000;  
+}
+
+.success {
+  padding: 5px 5px 5px 5px;
+  margin: 5px 0px 5px 0px;
+  
+  display: block;
+  opacity: .8;
+
+  color: black;
+  font-size: 16px;
+  text-align: center;
+
+  background-color: #7ded6f;
+  
+  border-style: solid;
+  border-width: 1px;
+  border-color: #108700;
+}
